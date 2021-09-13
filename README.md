@@ -30,6 +30,3 @@
 
 ## Licence
 MIT
-
-
-![turtleSwim](https://user-images.githubusercontent.com/76898162/133015006-76a00713-c354-425c-8912-07a5ce1283ac.gif) width="320px"
