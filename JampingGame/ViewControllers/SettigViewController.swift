@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import  AVFoundation
 
 class SettigViewController: UIViewController {
     
@@ -32,6 +31,10 @@ extension SettigViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        return
     }
     
 //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
