@@ -6,8 +6,6 @@ target 'JampingGame' do
   use_frameworks!
 
   # Pods for JampingGame
-
-  pod 'Firebase/Analytics'
   
   pod 'Google-Mobile-Ads-SDK'
 

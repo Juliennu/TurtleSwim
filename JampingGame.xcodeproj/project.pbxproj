@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,6 +35,8 @@
 		1AAC89A32679C6C7003D7F7B /* turtleCry.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AAC89A22679C6C7003D7F7B /* turtleCry.png */; };
 		1AAC89A72679D1D4003D7F7B /* plasticShoppingBag.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AAC89A62679D1D4003D7F7B /* plasticShoppingBag.png */; };
 		1AAC89A92679DACE003D7F7B /* shark.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AAC89A82679DACE003D7F7B /* shark.png */; };
+		1AD45D7526EAF6840067D267 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1AD45D7426EAF6840067D267 /* FirebaseAnalytics */; };
+		1AD45D7726EAF6840067D267 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1AD45D7626EAF6840067D267 /* FirebaseCrashlytics */; };
 		1AFCE0A32683342100620103 /* SettigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFCE0A22683342100620103 /* SettigViewController.swift */; };
 		F15FDAFFD9CB0C994656E951 /* Pods_JampingGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F9E823D3891A5B3C609386 /* Pods_JampingGame.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD45D7726EAF6840067D267 /* FirebaseCrashlytics in Frameworks */,
+				1AD45D7526EAF6840067D267 /* FirebaseAnalytics in Frameworks */,
 				F15FDAFFD9CB0C994656E951 /* Pods_JampingGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,7 +120,6 @@
 				1AAC895826771512003D7F7B /* SceneDelegate.swift */,
 				1AAC896B26771668003D7F7B /* ViewControllers */,
 				1AAC895C26771512003D7F7B /* Main.storyboard */,
-				1AAC895F26771513003D7F7B /* Assets.xcassets */,
 				1AAC896126771513003D7F7B /* LaunchScreen.storyboard */,
 				1AAC896426771514003D7F7B /* Info.plist */,
 				1A06362E2681BC5C00B1BB8A /* GoogleService-Info.plist */,
@@ -127,6 +130,7 @@
 		1AAC896A26771627003D7F7B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1AAC895F26771513003D7F7B /* Assets.xcassets */,
 				1AAC89962678A8AA003D7F7B /* shape1.png */,
 				1AAC899F2679C18B003D7F7B /* turtleSwim1.png */,
 				1AAC899E2679C18B003D7F7B /* turtleSwim2.png */,
@@ -210,6 +214,10 @@
 			dependencies = (
 			);
 			name = JampingGame;
+			packageProductDependencies = (
+				1AD45D7426EAF6840067D267 /* FirebaseAnalytics */,
+				1AD45D7626EAF6840067D267 /* FirebaseCrashlytics */,
+			);
 			productName = JampingGame;
 			productReference = 1AAC895326771512003D7F7B /* JampingGame.app */;
 			productType = "com.apple.product-type.application";
@@ -237,6 +245,9 @@
 				Base,
 			);
 			mainGroup = 1AAC894A26771512003D7F7B;
+			packageReferences = (
+				1AD45D7326EAF6840067D267 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1AAC895426771512003D7F7B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -482,6 +493,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K9JFKB9X4;
 				INFOPLIST_FILE = JampingGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,6 +515,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K9JFKB9X4;
 				INFOPLIST_FILE = JampingGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,6 +550,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1AD45D7326EAF6840067D267 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1AD45D7426EAF6840067D267 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AD45D7326EAF6840067D267 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		1AD45D7626EAF6840067D267 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AD45D7326EAF6840067D267 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1AAC894B26771512003D7F7B /* Project object */;
 }
