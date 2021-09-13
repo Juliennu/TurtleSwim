@@ -1,8 +1,4 @@
 # TurtleSwim
-#<img src="https://user-images.githubusercontent.com/76898162/132785073-1be5f360-8bb5-45cf-8cd7-22c2812eebf1.png" width="320px">
-
-#![turtleSwim](https://user-images.githubusercontent.com/76898162/133015006-76a00713-c354-425c-8912-07a5ce1283ac.gif) width="320px"
-
 <img scr="https://user-images.githubusercontent.com/76898162/133015006-76a00713-c354-425c-8912-07a5ce1283ac.gif" width="320px">
 
 
@@ -34,3 +30,7 @@
 
 ## Licence
 MIT
+
+<img src="https://user-images.githubusercontent.com/76898162/132785073-1be5f360-8bb5-45cf-8cd7-22c2812eebf1.png" width="320px">
+
+![turtleSwim](https://user-images.githubusercontent.com/76898162/133015006-76a00713-c354-425c-8912-07a5ce1283ac.gif) width="320px"
